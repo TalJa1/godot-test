@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba0rsrtijtcvi"]
+
+[ext_resource type="Texture2D" uid="uid://3pdo0h5dxjxf" path="res://assets/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Down-Sheet.png" id="1_p3uao"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8fusk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t4mc6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p3uao")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, 27)
+shape = SubResource("CapsuleShape2D_8fusk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(171, 41)
+sprite_frames = SubResource("SpriteFrames_t4mc6")
+animation = &"idle"
