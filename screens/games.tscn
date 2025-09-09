@@ -20,3 +20,6 @@ offset_right = 225.0
 offset_bottom = 110.0
 text = "Quit
 "
+
+[connection signal="pressed" from="play_btn" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="quit_btn2" to="." method="_on_quit_btn_2_pressed"]
