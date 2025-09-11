@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://qomh4di6axd5"]
+[gd_scene load_steps=3 format=3 uid="uid://qomh4di6axd5"]
 
 [ext_resource type="Script" uid="uid://cg7l6aqldx5h7" path="res://scripts/main.gd" id="1_o84xs"]
+[ext_resource type="PackedScene" uid="uid://ba0rsrtijtcvi" path="res://screens/player/player.tscn" id="2_c4fas"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_o84xs")
@@ -11,3 +12,6 @@ offset_top = 3.0
 offset_right = 188.0
 offset_bottom = 34.0
 text = "Hello this is new world"
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_c4fas")]
+position = Vector2(11, 37)

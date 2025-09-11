@@ -1,6 +1,7 @@
-[gd_scene load_steps=96 format=3 uid="uid://ba0rsrtijtcvi"]
+[gd_scene load_steps=97 format=3 uid="uid://ba0rsrtijtcvi"]
 
 [ext_resource type="Texture2D" uid="uid://bmhvv3kekm25g" path="res://assets/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Down-Sheet.png" id="1_2ynrg"]
+[ext_resource type="Script" uid="uid://b8uxyc8r6cqxq" path="res://screens/player/player.gd" id="1_5vgg8"]
 [ext_resource type="Texture2D" uid="uid://3pdo0h5dxjxf" path="res://assets/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Down-Sheet.png" id="1_p3uao"]
 [ext_resource type="Texture2D" uid="uid://cihmmtlgqk0h6" path="res://assets/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Side-Sheet.png" id="2_p3uao"]
 [ext_resource type="Texture2D" uid="uid://b76eaukmrcylv" path="res://assets/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Side-Sheet.png" id="3_30kgi"]
@@ -17,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://dtpa2xbguh0mw" path="res://assets/Entities/Characters/Body_A/Animations/Walk_Base/Walk_Up-Sheet.png" id="14_uhf5g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8fusk"]
+radius = 7.75002
+height = 31.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ippcy"]
 atlas = ExtResource("1_2ynrg")
@@ -643,14 +646,15 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_5vgg8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(17, 26)
+position = Vector2(40.25, 34.5)
 shape = SubResource("CapsuleShape2D_8fusk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(94, 45)
-scale = Vector2(1.39063, 1.3125)
+position = Vector2(41, 34)
+scale = Vector2(0.882813, 0.859375)
 sprite_frames = SubResource("SpriteFrames_t4mc6")
 animation = &"walk_side_b"
 frame_progress = 0.915696
