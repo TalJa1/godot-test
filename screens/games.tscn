@@ -4,14 +4,18 @@
 [ext_resource type="PackedScene" uid="uid://ba0rsrtijtcvi" path="res://screens/player/player.tscn" id="2_c4fas"]
 
 [node name="Main" type="Node2D"]
+position = Vector2(-33, -14)
 script = ExtResource("1_o84xs")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 9.0
-offset_top = 3.0
-offset_right = 188.0
-offset_bottom = 34.0
+offset_left = -168.0
+offset_top = -46.0
+offset_right = 11.0
+offset_bottom = -15.0
 text = "Hello this is new world"
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_c4fas")]
-position = Vector2(11, 37)
+position = Vector2(9, 38)
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2

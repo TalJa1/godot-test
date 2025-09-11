@@ -646,6 +646,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(99, 56)
 script = ExtResource("1_5vgg8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -658,3 +659,7 @@ scale = Vector2(0.882813, 0.859375)
 sprite_frames = SubResource("SpriteFrames_t4mc6")
 animation = &"walk_side_b"
 frame_progress = 0.915696
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(42, 36)
+zoom = Vector2(2.6, 2.6)
