@@ -317,8 +317,11 @@ texture = ExtResource("4_wqchy")
 12:0/0 = 0
 13:0/0 = 0
 16:0/0 = 0
+16:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:0/0 = 0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 18:0/0 = 0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:1/0 = 0
 1:1/0 = 0
 3:1/0 = 0
@@ -1528,6 +1531,7 @@ texture = ExtResource("7_oobl2")
 8:14/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_w5k24"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7lj7r")
 sources/1 = SubResource("TileSetAtlasSource_cqofr")
 sources/2 = SubResource("TileSetAtlasSource_7vx7k")
@@ -1552,3 +1556,4 @@ position = Vector2(9, 38)
 position = Vector2(-62, 117)
 tile_set = SubResource("TileSet_w5k24")
 format = 2
+layer_0/tile_data = PackedInt32Array(-1, 1114113, 0, -65536, 1114113, 0, -65535, 1114113, 0, -65534, 1114113, 0, -65533, 1114113, 0, -65532, 1114113, 0, -65531, 1114113, 0, -65530, 1114113, 0, -65529, 1114113, 0, -65528, 1114113, 0, -65527, 1114113, 0, -65526, 1114113, 0, -65525, 1114113, 0, -65524, 1114113, 0, -65523, 1114113, 0, -65522, 1114113, 0, -3, 1114113, 0, -2, 1114113, 0, -65521, 1114113, 0, -65520, 1114113, 0)

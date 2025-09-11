@@ -1,7 +1,7 @@
 [gd_scene load_steps=97 format=3 uid="uid://ba0rsrtijtcvi"]
 
 [ext_resource type="Texture2D" uid="uid://bmhvv3kekm25g" path="res://assets/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Down-Sheet.png" id="1_2ynrg"]
-[ext_resource type="Script" uid="uid://b8uxyc8r6cqxq" path="res://screens/player/player.gd" id="1_5vgg8"]
+[ext_resource type="Script" path="res://screens/player/player.gd" id="1_5vgg8"]
 [ext_resource type="Texture2D" uid="uid://3pdo0h5dxjxf" path="res://assets/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Down-Sheet.png" id="1_p3uao"]
 [ext_resource type="Texture2D" uid="uid://cihmmtlgqk0h6" path="res://assets/Entities/Characters/Body_A/Animations/Carry_Idle/Carry_Idle_Side-Sheet.png" id="2_p3uao"]
 [ext_resource type="Texture2D" uid="uid://b76eaukmrcylv" path="res://assets/Entities/Characters/Body_A/Animations/Idle_Base/Idle_Side-Sheet.png" id="3_30kgi"]
@@ -646,7 +646,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-position = Vector2(99, 56)
+position = Vector2(180, 90)
 script = ExtResource("1_5vgg8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
